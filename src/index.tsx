@@ -3,10 +3,13 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import DynamicConfigState from './DynamicConfigState';
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <DynamicConfigState>
+      <App />
+    </DynamicConfigState>
   </React.StrictMode>,
   document.getElementById('root')
 );
